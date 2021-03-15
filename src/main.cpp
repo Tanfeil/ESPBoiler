@@ -15,6 +15,7 @@
 #include <HTTPClient.h>
 #include <Arduino.h>
 #include "../.pio/libdeps/esp32dev/ArduinoJson/ArduinoJson.h"
+#include "pass.h"
 
 typedef struct tm tm;
 
@@ -23,8 +24,7 @@ tm* getTime(){
     return localtime(&now);
 }
 
-char ssid[] = "Brennholzverleih";
-char pass[] = "Einhornaufzuchtstation";
+
 int status;
 
 Servo servo1;
